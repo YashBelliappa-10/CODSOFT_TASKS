@@ -32,8 +32,10 @@ def App_calculator():
     choice = input("enter your choice: ")
     if choice in ['1','2','3','4','5','6','7']:
         try:
-            number_1 =float(input("Enter first Number: "))
-            number_2 = float(input("Enter second number: "))
+            number_1 =int(input("Enter first Number: "))
+            number_2 = int(input("Enter second number: "))
+            #number_1 = float(input("Enter first Number: "))
+            #number_2 = float(input("Enter second Number: "))
         except:
             print("Invalid input. Please enter numeric values.")
             return
